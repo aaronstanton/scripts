@@ -1,0 +1,37 @@
+#
+# Setting up
+#
+#import os
+#os.environ['SFPENOPTS'] = 'bgcolor=w'
+
+from rsf.proj import *
+ 
+#
+# Make d.rsf
+#
+Flow('wavelet',None,
+     '''
+     spike nsp=1 d1=0.004 n1=32 k1=15 | ricker1 frequency=30 | scale dscale=10.
+     ''')
+
+Flow('spike',None,
+     '''
+     spike n1=256 n2=128 d1=0.004 d2=4.e-9 o2=4.e-8
+     nsp=3 k1=30,80,140 k2=80,60,40
+     ''')
+
+Flow('syn_cmp','spike wavelet',
+     '''
+     velxf adj=0 nx=128 dx=12.5 ox=-800. | conv filt=${SOURCES[1]} lag=0 | math output='-1.*input' | scale axis=12
+     ''')
+
+Result('d','syn_cmp','grey title="synthetic cmp in raster" label2="Distance" unit2="m"')
+
+#
+# Make d.vpl
+#
+# type "sfdoc stdplot" for more parameters
+#
+#Result('d','wiggle pclip=98 xmask=1 ymask=1 title="Input data" transp=y yreverse=y plotcol=7 axiscol=7 grid1=n grid2=n seemean=y')
+ 
+End()

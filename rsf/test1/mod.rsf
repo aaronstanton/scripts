@@ -1,0 +1,15 @@
+1.6-svn	sfspike	code/rsf/test:	astanton@toeplitz	Thu Sep  5 15:29:29 2013
+
+	d2=0.0242157
+	o1=0
+	n2=35
+	o2=0.01
+	label1="Time"
+	data_format="native_float"
+	label2="Distance"
+	esize=4
+	in="/var/tmp/code/rsf/test/mod.rsf@"
+	unit1="s"
+	unit2="km"
+	d1=0.0533333
+	n1=75

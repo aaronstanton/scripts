@@ -1,0 +1,7 @@
+1.6-svn	sfsegyread	rsf/alaska/01_input:	astanton@toeplitz	Fri Sep 13 11:35:21 2013
+
+	n2=5280
+	data_format="native_int"
+	esize=4
+	in="/var/tmp/rsf/alaska/01_input/tfile.rsf@"
+	n1=91

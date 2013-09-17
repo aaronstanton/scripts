@@ -1,0 +1,33 @@
+#
+# Setting up
+#
+#import os
+#os.environ['SFPENOPTS'] = 'bgcolor=w'
+
+from rsf.proj import *
+ 
+#
+# Make d.rsf
+#
+Flow('d1in tfile hfile','/home/astanton/rsf/src/book/data/alaska/line31-81/p.su',
+     '''
+     segyread su=y suxdr=n endian=n format=1 verb=y tfile=${TARGETS[1]} hfile=${TARGETS[2]}
+     ''')
+
+Flow('ftfile','tfile',
+     '''
+     dd type=float
+     ''')
+
+Flow('d1in_binned fold','d1in ftfile',
+    '''
+    window n1=1 |
+    bin fold=${TARGETS[1]} head=${SOURCES[1]}
+    x0=0 nx=100 dx=50 xkey=11 
+    y0=101 ny=636 dy=1   ykey=5
+     ''')
+
+Result('fold','grey title=foldplot label1=Offset label2=CMP')
+
+End()
+
