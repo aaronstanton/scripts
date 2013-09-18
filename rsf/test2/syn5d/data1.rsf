@@ -1,4 +1,4 @@
-1.6-svn	sfsyn5d	rsf/test2/syn5d:	astanton@toeplitz	Mon Sep 16 16:47:26 2013
+1.6-svn	sfsyn5d	rsf/test2/syn5d:	astanton@moose	Wed Sep 18 00:02:14 2013
 
 	unit4="m"
 	n2=100
@@ -18,9 +18,9 @@
 	label3="Source-y"
 	n5=1
 	d5=10
-	o4=500
+	o4=700
 	label4="Receiver-x"
-	o5=500
+	o5=700
 	esize=4
 	label5="Receiver-y"
 	in="/var/tmp/rsf/test2/syn5d/data1.rsf@"

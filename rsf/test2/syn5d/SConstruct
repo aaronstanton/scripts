@@ -15,17 +15,30 @@ Flow('data1 my_tfile',None,
      tfile=${TARGETS[1]} 
      n1=1000 n2=100 n3=100 n4=1 n5=1 
      d1=0.001 d2=10 d3=10 d4=10 d5=10 
-     o2=250 o3=250 o4=500 o5=500 
-     nevent=4 amp=1,-1,1,-2 t0=0.2,0.4,0.6,0.8 f0=10,20,30,40 vx=1500,1500,1500,1500 vy=1200,1200,1200,1200
+     o2=250 o3=250 o4=700 o5=700 
+     nevent=4 amp=1,-1,1,-2 t0=0.2,0.4,0.6,0.8 f0=10,20,30,40 vx=1100,1100,1100,1100 vy=800,800,800,800
      title="1 receiver gather"
+     ''') 
+
+Flow('data1_fk1k2','data1',
+     '''
+     sffft1 | sffft3 axis=2 | sffft3 axis=3 | sfcabs
      ''') 
 
 Result('data1',
        '''
-       window min4=500 n4=1 min5=500 n5=1 |
+       window min4=700 n4=1 min5=700 n5=1 |
        byte gainpanel=all |
-       grey3 frame1=650 frame2=25 frame3=25
-       screenratio=1 
+       grey3 frame1=650 frame2=50 frame3=50
+       screenratio=1 flat=y title=" "
+       ''')
+
+Result('data1_fk1k2',
+       '''
+       window min1=0 n1=80 min4=500 n4=1 min5=500 n5=1 |
+       byte gainpanel=all |
+       grey3 frame1=30 frame2=100 frame3=100
+       screenratio=1 color=g pclip=90 flat=y label2="K1" unit2="1/m" label3="K2" unit3="1/m" title=" "
        ''')
 
 End()

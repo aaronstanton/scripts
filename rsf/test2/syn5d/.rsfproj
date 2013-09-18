@@ -1,3 +1,3 @@
-uses=['sfwindow', 'sfbyte', 'sfgrey3']
+uses=['sffft1', 'sffft3', 'sfcabs', 'sfwindow', 'sfbyte', 'sfgrey3']
 data=[]
-size=   43640000
+size=  123800000
