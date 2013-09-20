@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.4)  18 SEP 2013 00:11
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.4)  20 SEP 2013 00:01
 entering extended mode
  %&-line parsing enabled.
 **slides.ltx
@@ -1006,18 +1006,54 @@ File: logo.pdf Graphic file (type pdf)
  <use logo.pdf> [5
 
 ]
-<syn5d/Fig/data1.pdf, id=57, 672.11098pt x 679.33798pt>
-File: syn5d/Fig/data1.pdf Graphic file (type pdf)
+<syn5d/Fig/dtrue.pdf, id=57, 672.11098pt x 679.33798pt>
+File: syn5d/Fig/dtrue.pdf Graphic file (type pdf)
 
-<use syn5d/Fig/data1.pdf>
-<syn5d/Fig/data1_fk1k2.pdf, id=58, 672.11098pt x 679.33798pt>
-File: syn5d/Fig/data1_fk1k2.pdf Graphic file (type pdf)
+<use syn5d/Fig/dtrue.pdf>
+<syn5d/Fig/dtrue_fk.pdf, id=58, 672.11098pt x 679.33798pt>
+File: syn5d/Fig/dtrue_fk.pdf Graphic file (type pdf)
 
-<use syn5d/Fig/data1_fk1k2.pdf>
+<use syn5d/Fig/dtrue_fk.pdf>
 File: logo.pdf Graphic file (type pdf)
  <use logo.pdf> [6
 
- <./syn5d/Fig/data1.pdf> <./syn5d/Fig/data1_fk1k2.pdf>]
+ <./syn5d/Fig/dtrue.pdf> <./syn5d/Fig/dtrue_fk.pdf>] <syn5d/Fig/dnoise.pdf, id=
+76, 672.11098pt x 679.33798pt>
+File: syn5d/Fig/dnoise.pdf Graphic file (type pdf)
+
+<use syn5d/Fig/dnoise.pdf>
+<syn5d/Fig/dnoise_fk.pdf, id=77, 672.11098pt x 679.33798pt>
+File: syn5d/Fig/dnoise_fk.pdf Graphic file (type pdf)
+
+<use syn5d/Fig/dnoise_fk.pdf>
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf> [7
+
+ <./syn5d/Fig/dnoise.pdf> <./syn5d/Fig/dnoise_fk.pdf>] <syn5d/Fig/ddec.pdf, id=
+96, 672.11098pt x 679.33798pt>
+File: syn5d/Fig/ddec.pdf Graphic file (type pdf)
+
+<use syn5d/Fig/ddec.pdf>
+<syn5d/Fig/ddec_fk.pdf, id=97, 672.11098pt x 679.33798pt>
+File: syn5d/Fig/ddec_fk.pdf Graphic file (type pdf)
+
+<use syn5d/Fig/ddec_fk.pdf>
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf> [8
+
+ <./syn5d/Fig/ddec.pdf> <./syn5d/Fig/ddec_fk.pdf>] <syn5d/Fig/dstat.pdf, id=115
+, 672.11098pt x 679.33798pt>
+File: syn5d/Fig/dstat.pdf Graphic file (type pdf)
+
+<use syn5d/Fig/dstat.pdf>
+<syn5d/Fig/dstat_fk.pdf, id=116, 672.11098pt x 679.33798pt>
+File: syn5d/Fig/dstat_fk.pdf Graphic file (type pdf)
+
+<use syn5d/Fig/dstat_fk.pdf>
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf> [9
+
+ <./syn5d/Fig/dstat.pdf> <./syn5d/Fig/dstat_fk.pdf>]
 \tf@nav=\write6
 \openout6 = `slides.nav'.
 
@@ -1034,10 +1070,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 16358 strings out of 495061
- 296941 string characters out of 1182622
- 363961 words of memory out of 3000000
- 19079 multiletter control sequences out of 15000+50000
+ 16448 strings out of 495061
+ 298510 string characters out of 1182622
+ 363960 words of memory out of 3000000
+ 19139 multiletter control sequences out of 15000+50000
  15987 words of font info for 59 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  55i,11n,55p,436b,376s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1050,9 +1086,9 @@ ts/cm/cmssi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss
 i12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi17.pfb></
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exmf-texlive/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on slides.pdf (6 pages, 472096 bytes).
+Output written on slides.pdf (9 pages, 1877790 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

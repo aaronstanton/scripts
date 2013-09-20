@@ -1,0 +1,7 @@
+1.6-svn	sfsyn5d	rsf/test2/syn5d:	astanton@moose	Thu Sep 19 23:26:32 2013
+
+	n2=10000
+	data_format="native_int"
+	esize=4
+	in="/var/tmp/rsf/test2/syn5d/head1.rsf@"
+	n1=91

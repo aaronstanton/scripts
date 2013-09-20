@@ -91,8 +91,20 @@ $\alpha_2 \rightarrow$ 1  when data are free of statics.}
 %    \plot{data1}{width=0.5\textwidth}{}
 %\end{frame}
 
-\begin{frame} \frametitle{Multiplots}
-    \multiplot{2}{data1,data1_fk1k2}{width=0.45\textwidth}{}
+\begin{frame} \frametitle{Original data}
+    \multiplot{2}{dtrue,dtrue_fk}{width=0.45\textwidth}{}
+\end{frame}
+
+\begin{frame} \frametitle{Noise}
+    \multiplot{2}{dnoise,dnoise_fk}{width=0.45\textwidth}{}
+\end{frame}
+
+\begin{frame} \frametitle{Decimation}
+    \multiplot{2}{ddec,ddec_fk}{width=0.45\textwidth}{}
+\end{frame}
+
+\begin{frame} \frametitle{Statics}
+    \multiplot{2}{dstat,dstat_fk}{width=0.45\textwidth}{}
 \end{frame}
 
 %\begin{frame} \frametitle{Multiplots}

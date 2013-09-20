@@ -7,33 +7,133 @@
 from rsf.proj import *
  
 #
-# Make d.rsf
+# Make din.rsf
 #
-Flow('data1 my_tfile',None,
+Flow('din head1',None,
      '''
-     ~/rsf/src/user/astanton/sfsyn5d
+     syn5d
      tfile=${TARGETS[1]} 
      n1=1000 n2=100 n3=100 n4=1 n5=1 
      d1=0.001 d2=10 d3=10 d4=10 d5=10 
      o2=250 o3=250 o4=700 o5=700 
-     nevent=4 amp=1,-1,1,-2 t0=0.2,0.4,0.6,0.8 f0=10,20,30,40 vx=1100,1100,1100,1100 vy=800,800,800,800
-     title="1 receiver gather"
+     nevent=4 amp=1,-1,1,-2 t0=0.2,0.4,0.6,0.8 f0=10,20,30,40 vx=1100,1100,1100,1100 vy=800,800,800,800 
+     title="1 receiver gather" 
      ''') 
 
-Flow('data1_fk1k2','data1',
+#
+# binning of headers to enable binning the data (isx/isy/igx/igy)
+#
+Flow('head2','head1',
      '''
-     sffft1 | sffft3 axis=2 | sffft3 axis=3 | sfcabs
+     geom5d headin=${SOURCES[0]} headout=${TARGETS[0]} mode=1 dsx=10 dsy=10 dgx=1 dgy=1
      ''') 
 
-Result('data1',
+#
+# bin the data (zero traces at missing trace locations)
+#
+Flow('dtrue head3','din head2',
+     '''
+     pad5d headin=${SOURCES[1]} headout=${TARGETS[1]} mode=1
+     ''') 
+Flow('dtrue_fk','dtrue',
+     '''
+     fft1 | fft3 axis=2 | fft3 axis=3 | cabs
+     ''') 
+Result('dtrue',
        '''
        window min4=700 n4=1 min5=700 n5=1 |
        byte gainpanel=all |
-       grey3 frame1=650 frame2=25 frame3=25
+       grey3 frame1=650 frame2=50 frame3=50
        screenratio=1 flat=y title=" "
        ''')
+Result('dtrue_fk',
+       '''
+       window min1=0 n1=80 min4=500 n4=1 min5=500 n5=1 |
+       byte gainpanel=all |
+       grey3 frame1=30 frame2=100 frame3=100
+       screenratio=1 color=g pclip=90 flat=y label2="K1" unit2="1/m" label3="K2" unit3="1/m" title=" "
+       ''')
 
-Result('data1_fk1k2',
+#
+# update headers (zero padded traces only have bin indeces)
+# you can run sfheaderattr < head4.rsf to see the effect
+#
+Flow('head4','head3',
+     '''
+     geom5d headin=${SOURCES[0]} headout=${TARGETS[0]} mode=4 dsx=10 dsy=5 dgx=1 dgy=1
+     ''') 
+
+#
+# add normally distributed noise with amplitude between -2 and 2
+#
+Flow('dnoise','dtrue',
+     '''
+     noise range=2 
+     ''') 
+Flow('dnoise_fk','dnoise',
+     '''
+     fft1 | fft3 axis=2 | fft3 axis=3 | cabs
+     ''') 
+Result('dnoise',
+       '''
+       window min4=700 n4=1 min5=700 n5=1 |
+       byte gainpanel=all |
+       grey3 frame1=650 frame2=50 frame3=50
+       screenratio=1 flat=y title=" "
+       ''')
+Result('dnoise_fk',
+       '''
+       window min1=0 n1=80 min4=500 n4=1 min5=500 n5=1 |
+       byte gainpanel=all |
+       grey3 frame1=30 frame2=100 frame3=100
+       screenratio=1 color=g pclip=90 flat=y label2="K1" unit2="1/m" label3="K2" unit3="1/m" title=" "
+       ''')
+
+#
+# decimate 75% of traces
+#
+Flow('ddec','dtrue',
+     '''
+     decimate perc=75
+     ''') 
+Flow('ddec_fk','ddec',
+     '''
+     fft1 | fft3 axis=2 | fft3 axis=3 | cabs
+     ''') 
+Result('ddec',
+       '''
+       window min4=700 n4=1 min5=700 n5=1 |
+       byte gainpanel=all |
+       grey3 frame1=650 frame2=50 frame3=50
+       screenratio=1 flat=y title=" "
+       ''')
+Result('ddec_fk',
+       '''
+       window min1=0 n1=80 min4=500 n4=1 min5=500 n5=1 |
+       byte gainpanel=all |
+       grey3 frame1=30 frame2=100 frame3=100
+       screenratio=1 color=g pclip=90 flat=y label2="K1" unit2="1/m" label3="K2" unit3="1/m" title=" "
+       ''')
+
+#
+# add random static shifts between -0.01 and 0.01 seconds
+#
+Flow('dstat','dtrue',
+     '''
+     static range=0.01 
+     ''') 
+Flow('dstat_fk','dstat',
+     '''
+     fft1 | fft3 axis=2 | fft3 axis=3 | cabs
+     ''') 
+Result('dstat',
+       '''
+       window min4=700 n4=1 min5=700 n5=1 |
+       byte gainpanel=all |
+       grey3 frame1=650 frame2=50 frame3=50
+       screenratio=1 flat=y title=" "
+       ''')
+Result('dstat_fk',
        '''
        window min1=0 n1=80 min4=500 n4=1 min5=500 n5=1 |
        byte gainpanel=all |

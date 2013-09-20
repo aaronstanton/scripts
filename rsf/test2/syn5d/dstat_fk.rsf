@@ -1,0 +1,142 @@
+1.6-svn	sfsyn5d	rsf/test2/syn5d:	astanton@moose	Thu Sep 19 23:26:32 2013
+
+	unit4="m"
+	n2=100
+	d2=10
+	o1=0
+	unit5="m"
+	label1="Time"
+	n3=100
+	d3=10
+	o2=250
+	data_format="native_float"
+	head="head1.rsf"
+	label2="Source-x"
+	n4=1
+	d4=10
+	o3=250
+	label3="Source-y"
+	n5=1
+	d5=10
+	o4=700
+	label4="Receiver-x"
+	o5=700
+	esize=4
+	label5="Receiver-y"
+	in="/var/tmp/rsf/test2/syn5d/din.rsf@"
+	title="1 receiver gather"
+	unit1="s"
+	unit2="m"
+	unit3="m"
+	n1=1000
+	d1=0.001
+1.6-svn	sfpad5d	rsf/test2/syn5d:	astanton@moose	Thu Sep 19 23:26:42 2013
+
+	unit4="index"
+	n2=100
+	d2=1
+	o1=0
+	unit5="index"
+	label1="Time"
+	n3=100
+	d3=1
+	o2=25
+	data_format="native_float"
+	label2="ix1"
+	n4=1
+	d4=1
+	o3=25
+	label3="ix2"
+	n5=1
+	d5=1
+	o4=700
+	label4="ix3"
+	o5=700
+	esize=4
+	label5="ix4"
+	in="/var/tmp/rsf/test2/syn5d/dtrue.rsf@"
+	unit1="s"
+	unit2="index"
+	unit3="index"
+	n1=1000
+	d1=0.001
+1.6-svn	sfstatic	rsf/test2/syn5d:	astanton@moose	Thu Sep 19 23:28:54 2013
+
+	unit4="index"
+	n2=100
+	d2=1
+	o1=0
+	unit5="index"
+	label1="Time"
+	n3=100
+	d3=1
+	o2=25
+	data_format="native_float"
+	label2="ix1"
+	n4=1
+	d4=1
+	o3=25
+	label3="ix2"
+	n5=1
+	d5=1
+	o4=700
+	label4="ix3"
+	o5=700
+	esize=4
+	label5="ix4"
+	in="/var/tmp/rsf/test2/syn5d/dstat.rsf@"
+	unit1="s"
+	unit2="index"
+	unit3="index"
+	n1=1000
+	d1=0.001
+1.6-svn	sffft1	rsf/test2/syn5d:	astanton@moose	Thu Sep 19 23:29:02 2013
+
+	o1=0
+	label1="Frequency"
+	data_format="native_complex"
+	fft_n1=1000
+	esize=8
+	fft_o1=0
+	in="stdout"
+	fft_label1="Time"
+	unit1="Hz"
+	d1=1
+	n1=501
+	in="stdin"
+
+1.6-svn	sffft3	rsf/test2/syn5d:	astanton@moose	Thu Sep 19 23:29:02 2013
+
+	d2=0.005
+	n2=200
+	fft3_n2=100
+	o2=-0.5
+	fft3_o2=25
+	data_format="native_complex"
+	label2="Wavenumber"
+	fft3_label2="ix1"
+	esize=8
+	in="stdout"
+	unit2="1/index"
+	in="stdin"
+
+1.6-svn	sffft3	rsf/test2/syn5d:	astanton@moose	Thu Sep 19 23:29:03 2013
+
+	d3=0.005
+	n3=200
+	fft3_n3=100
+	data_format="native_complex"
+	o3=-0.5
+	fft3_o3=25
+	label3="Wavenumber"
+	fft3_label3="ix2"
+	esize=8
+	in="stdout"
+	unit3="1/index"
+	in="stdin"
+
+1.6-svn	sfcabs	rsf/test2/syn5d:	astanton@moose	Thu Sep 19 23:29:04 2013
+
+	data_format="native_float"
+	esize=4
+	in="/var/tmp/rsf/test2/syn5d/dstat_fk.rsf@"
