@@ -2,6 +2,6 @@ from rsf.tex import *
 
 Paper('slides',
      lclass='cwpslides',
-     use='multicol,color,overpic,listings,amsmath,amssymb,amsbsy,comment,textpos,epstopdf,epsfig')
+     use='multicol,color,overpic,listings,amsmath,amssymb,amsbsy,comment,textpos,epstopdf,epsfig,pgf')
 
 End(use='color')

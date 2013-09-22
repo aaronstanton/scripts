@@ -1,4 +1,4 @@
-1.6-svn	sfsyn5d	rsf/test2/syn5d:	astanton@moose	Wed Sep 18 00:02:14 2013
+1.6-svn	sfsyn5d	rsf/test2/syn5d:	astanton@toeplitz	Wed Sep 18 11:23:07 2013
 
 	unit4="m"
 	n2=100
@@ -30,7 +30,7 @@
 	unit3="m"
 	n1=1000
 	d1=0.001
-1.6-svn	sffft1	rsf/test2/syn5d:	astanton@moose	Wed Sep 18 00:02:29 2013
+1.6-svn	sffft1	rsf/test2/syn5d:	astanton@toeplitz	Wed Sep 18 11:23:13 2013
 
 	o1=0
 	label1="Frequency"
@@ -45,7 +45,7 @@
 	n1=501
 	in="stdin"
 
-1.6-svn	sffft3	rsf/test2/syn5d:	astanton@moose	Wed Sep 18 00:02:29 2013
+1.6-svn	sffft3	rsf/test2/syn5d:	astanton@toeplitz	Wed Sep 18 11:23:13 2013
 
 	d2=0.0005
 	n2=200
@@ -60,7 +60,7 @@
 	unit2="1/m"
 	in="stdin"
 
-1.6-svn	sffft3	rsf/test2/syn5d:	astanton@moose	Wed Sep 18 00:02:30 2013
+1.6-svn	sffft3	rsf/test2/syn5d:	astanton@toeplitz	Wed Sep 18 11:23:13 2013
 
 	d3=0.0005
 	n3=200
@@ -75,7 +75,7 @@
 	unit3="1/m"
 	in="stdin"
 
-1.6-svn	sfcabs	rsf/test2/syn5d:	astanton@moose	Wed Sep 18 00:02:31 2013
+1.6-svn	sfcabs	rsf/test2/syn5d:	astanton@toeplitz	Wed Sep 18 11:23:14 2013
 
 	data_format="native_float"
 	esize=4

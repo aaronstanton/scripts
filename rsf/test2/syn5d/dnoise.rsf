@@ -1,4 +1,4 @@
-1.6-svn	sfsyn5d	rsf/test2/syn5d:	astanton@moose	Thu Sep 19 23:26:32 2013
+1.6-svn	sfsyn5d	rsf/test2/syn5d:	astanton@toeplitz	Fri Sep 20 11:42:38 2013
 
 	unit4="m"
 	n2=100
@@ -30,7 +30,7 @@
 	unit3="m"
 	n1=1000
 	d1=0.001
-1.6-svn	sfpad5d	rsf/test2/syn5d:	astanton@moose	Thu Sep 19 23:26:42 2013
+1.6-svn	sfpad5d	rsf/test2/syn5d:	astanton@toeplitz	Fri Sep 20 11:42:44 2013
 
 	unit4="index"
 	n2=100
@@ -60,7 +60,7 @@
 	unit3="index"
 	n1=1000
 	d1=0.001
-1.6-svn	sfnoise	rsf/test2/syn5d:	astanton@moose	Thu Sep 19 23:43:20 2013
+1.6-svn	sfnoise	rsf/test2/syn5d:	astanton@toeplitz	Fri Sep 20 11:42:47 2013
 
 	data_format="native_float"
 	esize=4

@@ -1,11 +1,17 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.4)  20 SEP 2013 00:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.9.5)  20 SEP 2013 16:19
 entering extended mode
  %&-line parsing enabled.
 **slides.ltx
 (./slides.ltx
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
 (/home/astanton/texmf/tex/latex/cwp/cwpslides.cls
 Document Class: cwpslides 2007/4/15 v0.1 CWP slides
 (/usr/share/texmf/tex/latex/beamer/base/beamer.cls
@@ -806,23 +812,42 @@ File: epstopdf-sys.cfg 2009/10/26 v1.1 Configuration of epstopdf for TeX Live
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen204
 \epsfysize=\dimen205
-) (./slides.aux)
+)
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box83
+)
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen206
+\pgf@nodesepend=\dimen207
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+))
+(./slides.aux)
 \openout1 = `slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -868,17 +893,17 @@ driver: pdftex
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count179
-\scratchdimen=\dimen206
-\scratchbox=\box83
+\scratchdimen=\dimen208
+\scratchbox=\box84
 \nofMPsegments=\count180
 \nofMParguments=\count181
 \everyMPshowfont=\toks43
 \MPscratchCnt=\count182
-\MPscratchDim=\dimen207
+\MPscratchDim=\dimen209
 \MPnumerator=\count183
 \everyMPtoPDFconversion=\toks44
 ) ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 16.
+Package hyperref Info: Link coloring OFF on input line 17.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
@@ -888,51 +913,51 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count184
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-\AtBeginShipoutBox=\box84
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+\AtBeginShipoutBox=\box85
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 16.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 17.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 16.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 17.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 16.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 16.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 16.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 16.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 17.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 16.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 16.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 16.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 17.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 16.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 16.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 16.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 17.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 16.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 16.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 17.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 16.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 17.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 16.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 16.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 16.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 16.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 16.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 16.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 17.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -962,25 +987,25 @@ Dictionary: translator-theorem-dictionary, Language: English
  (./slides.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 18.
+(hyperref)                setting the option has no effect on input line 19.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <4> not available
-(Font)              size <5> substituted on input line 27.
+(Font)              size <5> substituted on input line 23.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 27.
+(Font)              size <5> substituted on input line 23.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+LaTeX Font Info:    Try loading font information for U+msa on input line 34.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 34.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -1006,54 +1031,96 @@ File: logo.pdf Graphic file (type pdf)
  <use logo.pdf> [5
 
 ]
-<syn5d/Fig/dtrue.pdf, id=57, 672.11098pt x 679.33798pt>
-File: syn5d/Fig/dtrue.pdf Graphic file (type pdf)
-
-<use syn5d/Fig/dtrue.pdf>
-<syn5d/Fig/dtrue_fk.pdf, id=58, 672.11098pt x 679.33798pt>
-File: syn5d/Fig/dtrue_fk.pdf Graphic file (type pdf)
-
-<use syn5d/Fig/dtrue_fk.pdf>
 File: logo.pdf Graphic file (type pdf)
- <use logo.pdf> [6
+ <use logo.pdf>
+[6
 
- <./syn5d/Fig/dtrue.pdf> <./syn5d/Fig/dtrue_fk.pdf>] <syn5d/Fig/dnoise.pdf, id=
-76, 672.11098pt x 679.33798pt>
-File: syn5d/Fig/dnoise.pdf Graphic file (type pdf)
-
-<use syn5d/Fig/dnoise.pdf>
-<syn5d/Fig/dnoise_fk.pdf, id=77, 672.11098pt x 679.33798pt>
-File: syn5d/Fig/dnoise_fk.pdf Graphic file (type pdf)
-
-<use syn5d/Fig/dnoise_fk.pdf>
+]
 File: logo.pdf Graphic file (type pdf)
  <use logo.pdf> [7
 
- <./syn5d/Fig/dnoise.pdf> <./syn5d/Fig/dnoise_fk.pdf>] <syn5d/Fig/ddec.pdf, id=
-96, 672.11098pt x 679.33798pt>
-File: syn5d/Fig/ddec.pdf Graphic file (type pdf)
-
-<use syn5d/Fig/ddec.pdf>
-<syn5d/Fig/ddec_fk.pdf, id=97, 672.11098pt x 679.33798pt>
-File: syn5d/Fig/ddec_fk.pdf Graphic file (type pdf)
-
-<use syn5d/Fig/ddec_fk.pdf>
+]
 File: logo.pdf Graphic file (type pdf)
  <use logo.pdf> [8
 
- <./syn5d/Fig/ddec.pdf> <./syn5d/Fig/ddec_fk.pdf>] <syn5d/Fig/dstat.pdf, id=115
-, 672.11098pt x 679.33798pt>
-File: syn5d/Fig/dstat.pdf Graphic file (type pdf)
+]
+<syn5d/Fig/original_data.pdf, id=77, 614.295pt x 794.97pt>
+File: syn5d/Fig/original_data.pdf Graphic file (type pdf)
 
-<use syn5d/Fig/dstat.pdf>
-<syn5d/Fig/dstat_fk.pdf, id=116, 672.11098pt x 679.33798pt>
-File: syn5d/Fig/dstat_fk.pdf Graphic file (type pdf)
-
-<use syn5d/Fig/dstat_fk.pdf>
+<use syn5d/Fig/original_data.pdf>
 File: logo.pdf Graphic file (type pdf)
  <use logo.pdf> [9
 
- <./syn5d/Fig/dstat.pdf> <./syn5d/Fig/dstat_fk.pdf>]
+ <./syn5d/Fig/original_data.pdf>]
+<syn5d/Fig/high_resolution_radon_without_statics.pdf, id=87, 614.295pt x 794.97
+pt>
+File: syn5d/Fig/high_resolution_radon_without_statics.pdf Graphic file (type pd
+f)
+ <use syn5d/Fig/high_resolution_radon_without_statics.pdf>
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf>
+[10
+
+ <./syn5d/Fig/high_resolution_radon_without_statics.pdf>]
+<syn5d/Fig/high_resolution_radon_with_statics.pdf, id=97, 614.295pt x 794.97pt>
+File: syn5d/Fig/high_resolution_radon_with_statics.pdf Graphic file (type pdf)
+<use syn5d/Fig/high_resolution_radon_with_statics.pdf>
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf> [11
+
+ <./syn5d/Fig/high_resolution_radon_with_statics.pdf>]
+<syn5d/Fig/estimated_data_without_statics.pdf, id=107, 614.295pt x 794.97pt>
+File: syn5d/Fig/estimated_data_without_statics.pdf Graphic file (type pdf)
+
+<use syn5d/Fig/estimated_data_without_statics.pdf>
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf> [12
+
+ <./syn5d/Fig/estimated_data_without_statics.pdf>]
+<syn5d/Fig/estimated_data_with_statics.pdf, id=117, 614.295pt x 794.97pt>
+File: syn5d/Fig/estimated_data_with_statics.pdf Graphic file (type pdf)
+
+<use syn5d/Fig/estimated_data_with_statics.pdf>
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf> [13
+
+ <./syn5d/Fig/estimated_data_with_statics.pdf>]
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf> [14
+
+]
+<syn5d/Fig/image_d_stat.pdf, id=133, 614.295pt x 794.97pt>
+File: syn5d/Fig/image_d_stat.pdf Graphic file (type pdf)
+
+<use syn5d/Fig/image_d_stat.pdf>
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf> [15
+
+ <./syn5d/Fig/image_d_stat.pdf>] <syn5d/Fig/image_d_stat_p.pdf, id=143, 614.295
+pt x 794.97pt>
+File: syn5d/Fig/image_d_stat_p.pdf Graphic file (type pdf)
+
+<use syn5d/Fig/image_d_stat_p.pdf>
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf> [16
+
+ <./syn5d/Fig/image_d_stat_p.pdf>] <syn5d/Fig/image_d_stat_pws.pdf, id=153, 614
+.295pt x 794.97pt>
+File: syn5d/Fig/image_d_stat_pws.pdf Graphic file (type pdf)
+
+<use syn5d/Fig/image_d_stat_pws.pdf>
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf> [17
+
+ <./syn5d/Fig/image_d_stat_pws.pdf>]
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf> [18
+
+]
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf> [19
+
+]
 \tf@nav=\write6
 \openout6 = `slides.nav'.
 
@@ -1070,25 +1137,29 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 16448 strings out of 495061
- 298510 string characters out of 1182622
- 363960 words of memory out of 3000000
- 19139 multiletter control sequences out of 15000+50000
+ 16857 strings out of 493848
+ 306795 string characters out of 1152824
+ 380304 words of memory out of 3000000
+ 19635 multiletter control sequences out of 15000+50000
  15987 words of font info for 59 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 55i,11n,55p,436b,376s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmssi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss
-i12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi17.pfb></
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on slides.pdf (9 pages, 1877790 bytes).
+ 714 hyphenation exceptions out of 8191
+ 55i,15n,55p,436b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmss17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssb
+x10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi12.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symb
+ols/msam10.pfb>
+Output written on slides.pdf (19 pages, 728562 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 39 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

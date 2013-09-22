@@ -64,11 +64,11 @@ Flow('head4','head3',
      ''') 
 
 #
-# add normally distributed noise with amplitude between -2 and 2
+# add normally distributed noise with amplitude between -5 and 5
 #
 Flow('dnoise','dtrue',
      '''
-     noise range=2 
+     noise range=5 
      ''') 
 Flow('dnoise_fk','dnoise',
      '''
@@ -130,7 +130,7 @@ Result('dstat',
        '''
        window min4=700 n4=1 min5=700 n5=1 |
        byte gainpanel=all |
-       grey3 frame1=650 frame2=50 frame3=50
+       grey3 frame1=650 frame2=80 frame3=50
        screenratio=1 flat=y title=" "
        ''')
 Result('dstat_fk',
